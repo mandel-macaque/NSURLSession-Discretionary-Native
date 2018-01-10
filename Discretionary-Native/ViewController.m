@@ -28,7 +28,7 @@
         self.session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
     }
 
-    self.downloadTask = [self.session downloadTaskWithURL:[NSURL URLWithString:@"https://rss.art19.com/episodes/439bd7ab-177b-4552-a102-eca19b7e50fd.mp3"]];
+    self.downloadTask = [self.session downloadTaskWithURL:[NSURL URLWithString:@"http://rss.art19.com/episodes/439bd7ab-177b-4552-a102-eca19b7e50fd.mp3"]];
 
     [self.downloadTask resume];
 }
